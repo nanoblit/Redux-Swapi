@@ -1,4 +1,4 @@
-import { SET_CHARACTERS, SET_FETCHING, FETCHING_SUCCESS, FETCHING_FAILURE } from '../actions';
+import { SET_CHARACTERS, SET_FETCHING, FETCHING_FAILURE } from '../actions';
 
 export const charsReducer = (state = [], action) => {
   switch (action.type) {
@@ -13,7 +13,7 @@ export const fetchingReducer = (state = false, action) => {
   switch (action.type) {
     case SET_FETCHING:
       return true;
-    case FETCHING_SUCCESS:
+    case SET_CHARACTERS:
       return false;
     case FETCHING_FAILURE:
       return false;
