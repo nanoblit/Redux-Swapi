@@ -1,5 +1,8 @@
-// we'll need axios
+import axios from 'axios';
 
+export const FETCH_CHARACTERS = 'FETCH_CHARACTERS';
+export const FETCHING_SUCCESS = 'FETCHING_SUCCESS';
+export const FETCHING_FAILURE = 'FETCHING_FAILURE';
 // we'll need to create 3 different action types here.
 // one for fetching, one for success and one for failure
 
