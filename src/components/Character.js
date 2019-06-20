@@ -1,7 +1,10 @@
-import React from "react";
+import React from 'react';
+import { shape, string } from 'prop-types';
 
-const Character = props => {
-  return <li>{props.character.name}</li>;
+const Character = ({ character }) => <li>{character.name}</li>;
+
+Character.propTypes = {
+  character: shape({ name: string.isRequired }).isRequired,
 };
 
 export default Character;
